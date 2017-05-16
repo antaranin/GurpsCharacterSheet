@@ -1,4 +1,9 @@
-﻿$HEADER$namespace $NAMESPACE$
+﻿namespace GurpsCharacterSheet.Core.DisplayModel
 {
-  public class $CLASS$ {$END$}
+    public class DisplaySkill
+    {
+        public string Name { get; set; }
+        public int Level { get; set; }
+        public int RelativeLevel { get; set; }
+    }
 }

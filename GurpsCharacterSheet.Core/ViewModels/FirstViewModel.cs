@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 
 namespace GurpsCharacterSheet.Core.ViewModels
@@ -5,11 +7,10 @@ namespace GurpsCharacterSheet.Core.ViewModels
     public class FirstViewModel 
         : MvxViewModel
     {
-        private string _hello = "Hello MvvmCross";
-        public string Hello
-        { 
-            get { return _hello; }
-            set { SetProperty (ref _hello, value); }
+        public SkillsViewModel SkillsViewModel { get; set; }
+        public FirstViewModel()
+        {
+            Debug.WriteLine("Making First view model");
         }
     }
 }

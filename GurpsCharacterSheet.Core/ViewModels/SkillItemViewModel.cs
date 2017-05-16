@@ -1,10 +1,9 @@
 ﻿using GurpsCharacterSheet.Core.DisplayModel;
 using MvvmCross.Core.ViewModels;
-using MvvmCross.FieldBinding;
 
 namespace GurpsCharacterSheet.Core.ViewModels
 {
-    public class SkillItemViewHolder
+    public class SkillItemViewModel
         : MvxViewModel
     {
         private DisplaySkill _skill;
@@ -15,7 +14,7 @@ namespace GurpsCharacterSheet.Core.ViewModels
             set { SetProperty(ref _skill, value); }
         }
 
-        public SkillItemViewHolder(DisplaySkill skill)
+        public SkillItemViewModel(DisplaySkill skill)
         {
             Skill = skill;
         }

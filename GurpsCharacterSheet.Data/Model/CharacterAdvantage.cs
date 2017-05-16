@@ -1,4 +1,12 @@
-﻿$HEADER$namespace $NAMESPACE$
+﻿using Realms;
+
+namespace GurpsCharacterSheet.Data.Model
 {
-  public class $CLASS$ {$END$}
+    public class CharacterAdvantage: RealmObject
+    {
+        [PrimaryKey]
+        public string Id { get; set; }
+        public Advantage Advantage { get; set; }
+        public int Level { get; set; }
+    }
 }
