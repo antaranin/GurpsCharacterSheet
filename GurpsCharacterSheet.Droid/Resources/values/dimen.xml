@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="level_tv_width">20dp</dimen>
+	<dimen name="list_font_size">18sp</dimen>
+	<dimen name="small_margin">8dp</dimen>
+	<dimen name="medium_margin">16dp</dimen>
+</resources>
